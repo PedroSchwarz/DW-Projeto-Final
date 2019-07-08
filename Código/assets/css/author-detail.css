@@ -5,7 +5,6 @@
 }
 
 main {
-    padding: 4rem 4rem;
     background-color: rgba(50, 50, 50, 1);
     color: #ffffff;
     font-size: 1.7rem;
@@ -15,9 +14,18 @@ h2 {
     font-size: 1.7rem;
 }
 
+section {
+    padding: 4rem 4rem;
+}
+
+button:hover, button:focus, button:active {
+    outline: none;
+}
+
 .secondary-color {
     color: orange;
 }
+
 
 #about h1 {
     font-size: 6rem;
@@ -33,7 +41,6 @@ h2 {
 #details {
     display: flex;
     justify-content: space-between;
-    margin: 3rem 0;
 }
 
 #details figure {
@@ -62,18 +69,120 @@ h2 {
     text-align: justify;
 }
 
-#best-posts {
+#posts {
+    background-color: rgba(60, 60, 60, 1);
     display: flex;
     flex-direction: column;
 }
 
-#best-posts h2 {
+#posts h2 {
     font-size: 3rem;
 }
 
-#best-posts article {
-    
+#posts p {
+    background-color: rgba(50, 50, 50, 1);
+    border-radius: 5px;
+    padding: 0.5rem 1rem;
+    margin-top: 2rem;
 }
 
+#posts #top-posts {
+    padding: 4rem 0;
+    display: flex;
+    justify-content: start;
+}
 
+#posts #top-posts article {
+    flex-basis: 40%;
+    height: 100%;
+    margin-right: 4rem;
+    background-color: rgba(50, 50, 50, 1);
+    border-radius: 10px;
+    box-shadow: 5px 5px 40px 2px #000000;
+}
 
+#posts #top-posts article figure img {
+    width: 100%;
+    object-fit: cover;
+}
+
+#posts #top-posts article .rating {
+    padding: 1rem;
+}
+
+#posts #top-posts .all-posts-btn {
+    align-self: center;
+    border-radius: 50%;
+    width: 80px;
+    height: 80px;
+    padding: 1rem;
+    background-color: rgba(50, 50, 50, 1);
+    border: none;
+}
+
+#posts #top-posts .all-posts-btn:hover {
+    background-color: rgba(80, 80, 80, 1);
+}
+
+#posts #top-posts .all-posts-btn:active {
+    background-color: rgba(90, 90, 90, 1);
+}
+
+#posts #top-posts .all-posts-btn i {
+    font-size: 2rem;
+}
+
+#social-medias {
+    position: fixed;
+    background-color: rgba(90, 90, 90, 1);
+    bottom: 5%;
+    right: 2%;
+    height: 10vh;
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 8px;
+}
+
+#social-medias button {
+    display: flex;
+    align-items: center;
+    background-color: rgba(50, 50, 50, 1);
+    border: none;
+    border-radius: 5px;
+    padding: 0.2rem 0.4rem;
+    color: white;
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+#social-medias button:hover {
+    background-color: rgba(80, 80, 80, 1);
+}
+
+#social-medias button:active {
+    background-color: rgba(90, 90, 90, 1);
+}
+
+#social-medias button i {
+    margin-left: 1rem;
+}
+
+#social-medias i {
+    font-size: 2rem;
+    margin-left: 1rem;
+}
+
+#social-medias .fab.fa-youtube {
+    color: red;
+}
+
+#social-medias .fab.fa-instagram {
+    color: purple;
+}
+
+#social-medias .fab.fa-twitter {
+    color: lightseagreen;
+}
