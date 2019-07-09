@@ -21,8 +21,80 @@ button:active {
     color: orange;
 }
 
+.show-up {
+    opacity: 1;
+    transform: translateY(0vh);
+}
+
 .slide-up {
     transform: translateY(-100vh);
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    height: 80vh;
+    width: 60%;
+    margin: auto;
+    background-color: rgba(140, 140, 140, 1);
+    box-shadow: 5px 5px 40px 2px #000000;
+    border-radius: 5%;
+    opacity: 0;
+    color: #ffffff;
+    transform: translateY(-100vh);
+    transition: all 2s linear;
+}
+
+form h2 {
+    text-align: center;
+    padding: 1rem;  
+    background-color: rgba(50, 50, 50, 1);
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    width: 100%;
+}
+
+.inputs-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+input {
+    width: 80%;
+    padding: 0.9rem 1rem;
+    border: 3px solid orange;
+    border-radius: 10px 10px 10px 0;
+    box-shadow: 0 8px 20px 1px rgba(60, 60, 60, 1);
+    margin: 0.8rem;
+    letter-spacing: 2px;
+    font-weight: 600;
+}
+
+input[type=button] {
+    margin-bottom: 1.5rem;
+    width: 40%;
+    color: orange;
+    background-color: rgba(50, 50, 50, 1);
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+input[type=button]:hover {
+    background-color: rgba(60, 60, 60, 1);
+}
+
+input[type=button]:active {
+    background-color: rgba(80, 80, 80, 1);
+}
+
+input:hover,
+input:focus,
+input:active {
+    outline: none;
 }
 
 #slideshow-section {
@@ -137,4 +209,31 @@ button:active {
 
 #leading-content button:active i {
     transform: scale(1.4);
+}
+
+#auth-section {
+    display: flex;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100vw;
+    z-index: -1;
+}
+
+#auth-section section {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    width: 50vw;
+    height: 100vh;
+}
+
+#auth-section #signin {
+    background-color: rgba(50, 50, 50, 1);
+}
+
+#auth-section #signup {
+    background-color: rgba(60, 60, 60, 1);
 }
