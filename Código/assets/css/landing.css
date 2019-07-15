@@ -1,14 +1,13 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway:400,700&display=swap');
+
 * {
     box-sizing: border-box;
     padding: 0;
     margin: 0;
 }
 
-h1 {
-    font-size: 4rem;
-    font-weight: bold;
-    text-transform: uppercase;
-    margin-bottom: 2rem;
+body {
+    font-family: 'Raleway', sans-serif;
 }
 
 button:hover,
@@ -21,7 +20,7 @@ button:active {
     color: orange;
 }
 
-.show-up {
+.slide-down {
     opacity: 1;
     transform: translateY(0vh);
 }
@@ -56,47 +55,6 @@ form h2 {
     width: 100%;
 }
 
-.other-medias {
-    background-color: rgba(50, 50, 50, 1);
-    width: 100%;
-    padding: 1rem;
-    text-align: center;
-}
-
-.other-medias h3 {
-    text-transform: uppercase;
-    letter-spacing: 2px;
-}
-
-.other-medias i {
-    font-size: 2rem;
-    margin: 1rem 1rem;
-}
-
-.other-medias i.fab.fa-youtube {
-    color: red;
-}
-
-.other-medias i.fab.fa-youtube:hover {
-    color: darkred;
-}
-
-.other-medias i.fab.fa-instagram {
-    color: darkviolet;
-}
-
-.other-medias i.fab.fa-instagram:hover {
-    color: purple;
-}
-
-.other-medias i.fab.fa-twitter {
-    color: lightseagreen;
-}
-
-.other-medias i.fab.fa-twitter:hover {
-    color: rgb(33, 116, 111);
-}
-
 .inputs-container {
     width: 100%;
     display: flex;
@@ -104,7 +62,8 @@ form h2 {
     align-items: center;
 }
 
-input {
+input,
+select {
     width: 80%;
     padding: 0.9rem 1rem;
     border: 3px solid orange;
@@ -115,6 +74,10 @@ input {
     font-weight: 600;
 }
 
+select {
+    color: rgb(78, 78, 78);
+}
+
 input[type=button] {
     margin-bottom: 1.5rem;
     width: 40%;
@@ -123,6 +86,7 @@ input[type=button] {
     text-transform: uppercase;
     font-weight: bold;
     border-radius: 10px;
+    transition: all 0.3s linear;
 }
 
 input[type=button]:hover {
@@ -133,9 +97,10 @@ input[type=button]:active {
     background-color: rgba(80, 80, 80, 1);
 }
 
-input:hover,
 input:focus,
-input:active {
+input:active,
+select:focus,
+select:active {
     outline: none;
 }
 
@@ -151,8 +116,6 @@ input:active {
     left: 0;
     z-index: 0;
     list-style: none;
-    margin: 0;
-    padding: 0;
 }
 
 #slideshow li {
@@ -166,11 +129,11 @@ input:active {
     background-repeat: no-repeat;
     opacity: 0;
     z-index: 0;
-    animation: imageAnimation 50s linear infinite;
+    animation: slideshow 40s linear infinite;
 }
 
 #slideshow li:nth-child(1) {
-    background-image: url(https://images.unsplash.com/photo-1526749837599-b4eba9fd855e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=750&q=80)
+    background-image: url(https://images.unsplash.com/photo-1562956839-c12bcb342513?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1534&q=80)
 }
 
 #slideshow li:nth-child(2) {
@@ -184,24 +147,17 @@ input:active {
 }
 
 #slideshow li:nth-child(4) {
-    background-image: url(https://images.unsplash.com/photo-1446329813274-7c9036bd9a1f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1500&q=80);
+    background-image: url(https://images.unsplash.com/photo-1562932292-21cc36f7254a?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1500&q=80);
     animation-delay: 30s;
 }
 
-#slideshow li:nth-child(5) {
-    background-image: url(https://images.unsplash.com/photo-1546948630-1149ea60dc86?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1500&q=80);
-    animation-delay: 40s;
-}
-
-@keyframes imageAnimation {
+@keyframes slideshow {
     0% {
         opacity: 0;
-        animation-timing-function: ease-in;
     }
 
     10% {
         opacity: 1;
-        animation-timing-function: ease-out;
     }
 
     20% {
@@ -226,6 +182,13 @@ input:active {
     width: 100vw;
     color: #ffffff;
     background-color: rgba(50, 50, 50, 0.8);
+}
+
+#leading-content h1 {
+    font-size: 4rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 2rem;
 }
 
 #leading-content p {
@@ -274,6 +237,48 @@ input:active {
 
 #auth-section #signin {
     background-color: rgba(50, 50, 50, 1);
+}
+
+.other-medias {
+    background-color: rgba(50, 50, 50, 1);
+    width: 100%;
+    padding: 1rem;
+    text-align: center;
+}
+
+.other-medias h3 {
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.other-medias i {
+    font-size: 2rem;
+    margin: 1rem 1rem;
+    transition: all 0.5s linear;
+}
+
+.other-medias i.fab.fa-google {
+    color: red;
+}
+
+.other-medias i.fab.fa-google:hover {
+    color: darkred;
+}
+
+.other-medias i.fab.fa-instagram {
+    color: darkviolet;
+}
+
+.other-medias i.fab.fa-instagram:hover {
+    color: purple;
+}
+
+.other-medias i.fab.fa-twitter {
+    color: lightseagreen;
+}
+
+.other-medias i.fab.fa-twitter:hover {
+    color: rgb(33, 116, 111);
 }
 
 #auth-section #signup {
