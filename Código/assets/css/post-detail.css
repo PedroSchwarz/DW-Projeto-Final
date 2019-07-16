@@ -1,0 +1,106 @@
+/* POST DETAILS SECTION STYLING */
+#post-details {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    background-color: rgba(50, 50, 50, 1);
+    min-height: 100vh;
+    padding-bottom: 2rem;
+}
+
+/* AUTHOR & MAP INFORMATIONS STYLING */
+#post-author-map {
+    flex-basis: 25%;
+    display: flex;
+    flex-direction: column;
+}
+
+#post-author-map article {
+    text-align: center;
+    background-color: rgba(60, 60, 60, 1);
+    border-radius: 8px;
+}
+
+#post-author-map article h2 {
+    color: #ffffff;
+}
+
+#post-author-map article aside h3 {
+    color: #ffffff;
+    font-weight: normal;
+}
+
+#post-author-map article aside i {
+    font-size: 2rem;
+    margin: 1rem 1rem;
+}
+
+#post-author-map article figure img {
+    border-radius: 50%;
+    border: 2px solid orange;
+    width: 260px;
+    height: 260px;
+    margin: 0.5rem 0;
+    object-fit: cover;
+}
+
+/* MAP STATIC IMAGE STYLING */
+#post-map {
+    height: 100%;
+    margin-top: 3rem;
+}
+
+#post-map figure img {
+    width: 100%;
+    border-radius: 8px;
+    border: 2px solid orange;
+    object-fit: cover;
+}
+
+/* POST CONTENT STYLING */
+#post-content {
+    flex-basis: 55%;
+}
+
+#post-content article {
+    background-color: rgba(60, 60, 60, 1);
+    border-radius: 8px;
+}
+
+#post-content article figure {
+    text-align: center;
+}
+
+#post-content article figure img {
+    width: 100%;
+}
+
+#post-content article #title-rating {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0.5rem 1rem;
+    color: #ffffff;
+}
+
+#post-content article #title-rating i {
+    font-size: 1.5rem;
+}
+
+#post-content article h3 {
+    color: #ffffff;
+    margin: 0 1rem;
+    font-size: 1rem;
+}
+
+#post-content article p {
+    text-align: justify;
+    color: #ffffff;
+    padding: 1rem;
+}
+
+/* COMMENTS SECTION STYLING */
+#comments-list {
+    min-height: 100vh;
+    background-color: rgba(60, 60, 60, 1);
+}

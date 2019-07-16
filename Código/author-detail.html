@@ -5,12 +5,23 @@
     <title>Detalhes do Autor</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/general.css">
     <link rel="stylesheet" href="./assets/css/author-detail.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.min.css">
 </head>
 
 <body>
-    <header></header>
+    <header>
+        <h1>NOME DO <span class="secondary-color">AUTOR</span></h1>
+        <nav>
+            <ul>
+                <li><a href="./landing.html" class="secondary-color">ENTRADA</a></li>
+                <li><a href="./landing.html" class="secondary-color">INÍCIO</a></li>
+                <li><a href="./post-detail.html" class="secondary-color">POST</a></li>
+                <li><a href="./author-detail.html" class="secondary-color current-link">AUTOR</a></li>
+            </ul>
+        </nav>
+    </header>
     <main>
         <section id="about">
             <h1>Sobre <span class="secondary-color">Mim</span></h1>
@@ -34,7 +45,7 @@
             <h2>Alguns dos Meus <span class="secondary-color"> Melhores Trabalhos</span></h2>
             <p>Trabalhos mais bem conceituados</p>
             <section id="top-posts">
-                <article>
+                <article class="card-effect">
                     <figure>
                         <img src="https://images.unsplash.com/photo-1519681393784-d120267933ba?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1000&q=80"
                             alt="Generic Image 1">
@@ -47,7 +58,7 @@
                         <i class="fas fa-star secondary-color"></i>
                     </div>
                 </article>
-                <article>
+                <article class="card-effect">
                     <figure>
                         <img src="https://images.unsplash.com/photo-1519681393784-d120267933ba?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1000&q=80"
                             alt="Generic Image 2">
@@ -68,27 +79,27 @@
             <h2>Minhas <span class="secondary-color">Conexões</span></h2>
             <p>Outros profissionais da área</p>
             <section id="professionals">
-                <article>
+                <article class="card-effect">
                     <figure><img
                             src="https://cdn.fstoppers.com/styles/large-16-9/s3/lead/2019/04/e0ce93ecb4876af5b43fb9a9ef7e7c3c.jpg"
                             alt="Generic Profile 1"></figure>
                     <h3>NOME DO PROFISSINAL</h3>
                     <button type="button">Ver Perfil <i class="fas fa-chevron-right secondary-color"></i></button>
                 </article>
-                <article>
+                <article class="card-effect">
                     <figure><img
                             src="https://images.unsplash.com/photo-1534864652366-f46034a7f6cf?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&w=1000&q=80"
                             alt="Generic Profile 2"></figure>
                     <h3>NOME DO PROFISSINAL</h3>
                     <button type="button">Ver Perfil <i class="fas fa-chevron-right secondary-color"></i></button>
                 </article>
-                <article>
+                <article class="card-effect">
                     <figure><img src="https://cdn.mos.cms.futurecdn.net/gvQ9NhQP8wbbM32jXy4V3j.jpg"
                             alt="Generic Profile 3"></figure>
                     <h3>NOME DO PROFISSINAL</h3>
                     <button type="button">Ver Perfil <i class="fas fa-chevron-right secondary-color"></i></button>
                 </article>
-                <article>
+                <article class="card-effect">
                     <figure><img
                             src="https://business-insurance.aon.com.au/AON_Affinity/media/Media/Page%20banners/Mobile/photographers-mobile.jpg?width=640&height=454&ext=.jpg"
                             alt="Generic Profile 4"></figure>
@@ -99,7 +110,7 @@
                         class="fas fa-chevron-right secondary-color"></i></button>
             </section>
         </section>
-        <aside id="social-medias">
+        <aside id="social-medias" class="card-effect">
             <button type="button">Seguir <i class="fas fa-plus secondary-color"></i></button>
             <i class="fab fa-youtube"></i>
             <i class="fab fa-instagram"></i>

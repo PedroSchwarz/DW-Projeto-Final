@@ -1,20 +1,81 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Detalhes da Publicação</title>
+    <link rel="stylesheet" href="./assets/css/general.css">
+    <link rel="stylesheet" href="./assets/css/post-detail.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.min.css">
 </head>
-<body>
-    <header></header>
-    <main>
-        <section>
 
+<body>
+    <header>
+        <h1>NOME DO <span class="secondary-color">POST</span></h1>
+        <nav>
+            <ul>
+                <li><a href="./landing.html" class="secondary-color">ENTRADA</a></li>
+                <li><a href="./landing.html" class="secondary-color">INÍCIO</a></li>
+                <li><a href="./post-detail.html" class="secondary-color current-link">POST</a></li>
+                <li><a href="./author-detail.html" class="secondary-color">AUTOR</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="post-details">
+            <section id="post-author-map">
+                <article class="card-effect">
+                    <figure>
+                        <img src="https://images.unsplash.com/photo-1493414307931-f6f5861f5029?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&w=1000&q=80"
+                            alt="Generic Avatar">
+                    </figure>
+                    <h2>NOME DO <span class="secondary-color">ARTISTA</span></h2>
+                    <aside>
+                        <hr>
+                        <h3>Veja Mais <span class="secondary-color">Meus Trabalhos</span></h3>
+                        <a href="https://www.youtube.com" target="_blank"><i class="fab fa-youtube"></i></a>
+                        <a href="https://www.instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+                        <a href="https://www.twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
+                    </aside>
+                </article>
+                <section id="post-map">
+                    <figure>
+                        <img src="http://www.worldeasyguides.com/wp-content/uploads/2013/08/Map-of-Brooklyn-Bridge-Area.jpg?w=640"
+                            alt="Generic Map">
+                    </figure>
+                </section>
+            </section>
+            <section id="post-content">
+                <article class="card-effect">
+                    <figure>
+                        <img src="https://images.unsplash.com/photo-1519681393784-d120267933ba?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1000&q=80"
+                            alt="Generic Image">
+                    </figure>
+                    <section id="title-rating">
+                        <h2>NOME DO <span class="secondary-color">POST</span></h2>
+                        <div>
+                            <i class="fas fa-star secondary-color"></i>
+                            <i class="fas fa-star secondary-color"></i>
+                            <i class="fas fa-star secondary-color"></i>
+                            <i class="fas fa-star secondary-color"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </section>
+                    <hr>
+                    <h3>R$ 150,00/por noite </h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea eos accusamus odit cumque explicabo
+                        maiores pariatur nihil, harum quos, voluptatibus illo earum necessitatibus. Facere voluptas
+                        quaerat odit at possimus suscipit, corporis blanditiis corrupti. Et facilis animi tenetur ad
+                        pariatur eaque!</p>
+                </article>
+            </section>
         </section>
-        <section>
-            
+        <section id="comments-list">
+
         </section>
     </main>
     <footer></footer>
 </body>
+
 </html>

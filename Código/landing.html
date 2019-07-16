@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Boas-Vindas</title>
+    <link rel="stylesheet" href="./assets/css/general.css">
     <link rel="stylesheet" href="./assets/css/landing.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.min.css">
 </head>
@@ -29,7 +30,7 @@
         </section>
         <section id="auth-section">
             <section id="signin">
-                <form action="" method="POST">
+                <form action="/auth/signin" method="POST" class="card-effect">
                     <h2>Bem-Vindo <span class="secondary-color">De Volta</span></h2>
                     <div class="inputs-container">
                         <input type="email" placeholder="E-mail">
@@ -45,7 +46,7 @@
                 </form>
             </section>
             <section id="signup">
-                <form action="" method="POST">
+                <form action="/auth/signup" method="POST" class="card-effect">
                     <h2>Primeira <span class="secondary-color">Vez?</span></h2>
                     <div class="inputs-container">
                         <input type="text" placeholder="Nome Completo">

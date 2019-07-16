@@ -1,34 +1,22 @@
-@import url('https://fonts.googleapis.com/css?family=Raleway:400,700&display=swap');
-
-* {
-    box-sizing: border-box;
-    padding: 0;
-    margin: 0;
-}
-
-body {
-    font-family: 'Raleway', sans-serif;
-}
-
+/* GENERAL STYLING FOR SPECIFIC PAGE */
 button:hover,
 button:focus,
 button:active {
     outline: none;
 }
 
-.secondary-color {
-    color: orange;
+/* SLIDESHOW SECTION SLIDING UP EFFECT */
+.slide-up {
+    transform: translateY(-100vh);
 }
 
+/* FORMS SLIDING DOWN FADE EFFECT */
 .slide-down {
     opacity: 1;
     transform: translateY(0vh);
 }
 
-.slide-up {
-    transform: translateY(-100vh);
-}
-
+/* FORMS STYLING */
 form {
     display: flex;
     flex-direction: column;
@@ -38,7 +26,6 @@ form {
     width: 60%;
     margin: auto;
     background-color: rgba(140, 140, 140, 1);
-    box-shadow: 5px 5px 40px 2px #000000;
     border-radius: 5%;
     opacity: 0;
     color: #ffffff;
@@ -62,6 +49,7 @@ form h2 {
     align-items: center;
 }
 
+/* INPUT & SELECT ELEMENTS STYLING */
 input,
 select {
     width: 80%;
@@ -74,10 +62,18 @@ select {
     font-weight: 600;
 }
 
+input:focus,
+input:active,
+select:focus,
+select:active {
+    outline: none;
+}
+
 select {
     color: rgb(78, 78, 78);
 }
 
+/* BUTTON TYPE INPUT STYLING */
 input[type=button] {
     margin-bottom: 1.5rem;
     width: 40%;
@@ -97,17 +93,12 @@ input[type=button]:active {
     background-color: rgba(80, 80, 80, 1);
 }
 
-input:focus,
-input:active,
-select:focus,
-select:active {
-    outline: none;
-}
-
+/* SLIDESHOW SECTION STYLING */
 #slideshow-section {
     transition: transform 1s linear;
 }
 
+/* UL STYLING */
 #slideshow {
     position: fixed;
     width: 100%;
@@ -118,6 +109,7 @@ select:active {
     list-style: none;
 }
 
+/* LI STYLING */
 #slideshow li {
     width: 100%;
     height: 100%;
@@ -132,6 +124,7 @@ select:active {
     animation: slideshow 40s linear infinite;
 }
 
+/* GIVING EACH LI A UNIQUE BACKGROUND IMAGE */
 #slideshow li:nth-child(1) {
     background-image: url(https://images.unsplash.com/photo-1562956839-c12bcb342513?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1534&q=80)
 }
@@ -151,6 +144,7 @@ select:active {
     animation-delay: 30s;
 }
 
+/* ANIMATION FOR INFINITE FADING IN & OUT OF EACH LI*/
 @keyframes slideshow {
     0% {
         opacity: 0;
@@ -169,6 +163,7 @@ select:active {
     }
 }
 
+/* LEADING CONTENT STYLING */
 #leading-content {
     display: flex;
     flex-direction: column;
@@ -208,6 +203,7 @@ select:active {
     transition: transform 0.2s linear;
 }
 
+/* LEADING CONTENT BUTTON ANIMATION */
 #leading-content button:hover i {
     transform: scale(1.2);
 }
@@ -216,6 +212,7 @@ select:active {
     transform: scale(1.4);
 }
 
+/* AUTH FORMS SECTION STYLING */
 #auth-section {
     display: flex;
     position: absolute;
@@ -235,6 +232,7 @@ select:active {
     height: 100vh;
 }
 
+/* SIGN IN SECTION STYLING */
 #auth-section #signin {
     background-color: rgba(50, 50, 50, 1);
 }
@@ -257,30 +255,7 @@ select:active {
     transition: all 0.5s linear;
 }
 
-.other-medias i.fab.fa-google {
-    color: red;
-}
-
-.other-medias i.fab.fa-google:hover {
-    color: darkred;
-}
-
-.other-medias i.fab.fa-instagram {
-    color: darkviolet;
-}
-
-.other-medias i.fab.fa-instagram:hover {
-    color: purple;
-}
-
-.other-medias i.fab.fa-twitter {
-    color: lightseagreen;
-}
-
-.other-medias i.fab.fa-twitter:hover {
-    color: rgb(33, 116, 111);
-}
-
+/* SIGN UP SECTION STYLING */
 #auth-section #signup {
     background-color: rgba(60, 60, 60, 1);
 }

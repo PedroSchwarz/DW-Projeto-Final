@@ -1,16 +1,4 @@
-/* FONTS IMPORT */
-@import url('https://fonts.googleapis.com/css?family=Raleway:400,700&display=swap');
-/* GENERAL STYLES */
-* {
-    box-sizing: border-box;
-    padding: 0;
-    margin: 0;
-}
-
-body {
-    font-family: 'Raleway', sans-serif;
-}
-
+/* GENERAL STYLING FOR SPECIFIC PAGE */
 main {
     background-color: rgba(50, 50, 50, 1);
     color: #ffffff;
@@ -31,10 +19,7 @@ button:active {
     outline: none;
 }
 
-.secondary-color {
-    color: orange;
-}
-
+/* SHOW NEXT ITEMS BUTTONS STYLING */
 .next-items-btn {
     align-self: center;
     border-radius: 50%;
@@ -43,8 +28,10 @@ button:active {
     padding: 1rem;
     background-color: rgba(50, 50, 50, 1);
     border: none;
+    transition: all 0.5s linear;
 }
 
+/* SHOW NEXT ITEMS BUTTONS ANIMATION */
 .next-items-btn:hover {
     background-color: rgba(80, 80, 80, 1);
 }
@@ -57,6 +44,7 @@ button:active {
     font-size: 2rem;
 }
 
+/* GIVING ALTERNATIVE COLOR FOR DARKER BACKGROUNDS */
 .next-items-btn.alternative-bg {
     background-color: rgba(90, 90, 90, 1);
 }
@@ -69,9 +57,9 @@ button:active {
     background-color: rgba(60, 60, 60, 1);
 }
 
-/* ABOUT SECTION */
+/* ABOUT SECTION STYLING */
 #about {
-    padding: 4rem 4rem 2rem 4rem;
+    padding: 0 4rem 2rem 4rem;
 }
 
 #about h1 {
@@ -85,7 +73,7 @@ button:active {
     margin-top: 1rem;
 }
 
-/* DETAILS SECTION */
+/* DETAILS SECTION STYLING */
 #details {
     display: flex;
     justify-content: space-between;
@@ -116,7 +104,7 @@ button:active {
     text-align: justify;
 }
 
-/* POSTS SECTION */
+/* POSTS SECTION STYLING */
 #posts {
     background-color: rgba(60, 60, 60, 1);
     display: flex;
@@ -142,7 +130,6 @@ button:active {
     margin-right: 4rem;
     background-color: rgba(50, 50, 50, 1);
     border-radius: 10px;
-    box-shadow: 5px 5px 40px 2px #000000;
 }
 
 #posts #top-posts article figure img {
@@ -154,7 +141,7 @@ button:active {
     padding: 1rem;
 }
 
-/* AUTHOR CONNECTIONS SECTION */
+/* AUTHOR CONNECTIONS SECTION STYLING */
 #author-connections p {
     background-color: rgba(60, 60, 60, 1);
     border-radius: 5px;
@@ -174,7 +161,6 @@ button:active {
     background-color: rgba(60, 60, 60, 1);
     padding: 1rem;
     border-radius: 8px;
-    box-shadow: 5px 5px 40px 2px #000000;
 }
 
 #author-connections #professionals article img {
@@ -211,7 +197,7 @@ button:active {
     background-color: rgba(60, 60, 60, 1);
 }
 
-/* SOCIAL MEDIAS SECTION */
+/* SOCIAL MEDIAS SECTION STYLING */
 #social-medias {
     position: fixed;
     background-color: rgba(90, 90, 90, 1);
@@ -236,8 +222,10 @@ button:active {
     text-transform: uppercase;
     font-weight: bold;
     letter-spacing: 2px;
+    transition: all 0.5s linear;
 }
 
+/* SOCIAL MEDIA BUTTON ANIMATION */
 #social-medias button:hover {
     background-color: rgba(80, 80, 80, 1);
 }
@@ -251,19 +239,7 @@ button:active {
     margin-left: 1rem;
 }
 
-#social-medias i {
+#social-medias>i {
     font-size: 2rem;
     margin-left: 1rem;
-}
-
-#social-medias .fab.fa-youtube {
-    color: red;
-}
-
-#social-medias .fab.fa-instagram {
-    color: purple;
-}
-
-#social-medias .fab.fa-twitter {
-    color: lightseagreen;
 }
