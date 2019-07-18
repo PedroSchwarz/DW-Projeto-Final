@@ -49,7 +49,8 @@ ul {
 }
 
 ul li {
-    padding: 1rem 0.5rem 1rem 0.5rem;
+    border-radius: 5px;
+    padding: 0.8rem 0.5rem 0.8rem 0.5rem;
     transition: all .4s linear;
 }
 
@@ -71,24 +72,26 @@ ul li a {
 }
 
 /* SOCIAL MEDIA ICONS */
-i.fab.fa-youtube, i.fab.fa-google {
-    color: red;
+i.fab.fa-youtube,
+i.fab.fa-google {
+    color: rgb(255, 0, 0);
 }
 
-i.fab.fa-youtube:hover, i.fab.fa-google:hover {
-    color: darkred;
+i.fab.fa-youtube:hover,
+i.fab.fa-google:hover {
+    color: rgb(139, 0, 0);
 }
 
 i.fab.fa-instagram {
-    color: darkviolet;
+    color: rgb(148, 0, 211);
 }
 
 i.fab.fa-instagram:hover {
-    color: purple;
+    color: rgb(128, 0, 128);
 }
 
 i.fab.fa-twitter {
-    color: lightseagreen;
+    color: rgb(32, 178, 170);
 }
 
 i.fab.fa-twitter:hover {

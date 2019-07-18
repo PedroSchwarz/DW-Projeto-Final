@@ -102,5 +102,78 @@
 /* COMMENTS SECTION STYLING */
 #comments-list {
     min-height: 100vh;
+    color: #ffffff;
+    padding: 4rem;
     background-color: rgba(60, 60, 60, 1);
+}
+
+#comments-list h2 {
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+#comments-list article {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    background-color: rgba(50, 50, 50, 1);
+    border-radius: 10px;
+    padding: 1rem;
+    margin: 2rem 0;
+}
+
+#comments-list article figure {
+    flex-basis: 25%;
+    text-align: center;
+}
+
+#comments-list article figure img {
+    width: 170px;
+    height: 170px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 2px solid orange;
+}
+
+#comments-list article div {
+    flex-basis: 75%;
+    text-align: justify;
+    padding-right: 3rem;
+}
+
+#comments-list article p {
+    margin: 1rem 0;
+}
+
+#comments-list>div {
+    text-align: center;
+}
+
+#comments-list>div i {
+    margin-right: 1rem;
+    animation: loading 3s linear infinite;
+}
+
+#comments-list>div i:nth-child(2) {
+    animation-delay: 1s;
+}
+
+#comments-list>div i:nth-child(3) {
+    animation-delay: 2s;
+}
+
+@keyframes loading {
+    0% {
+        color: #ffffff;
+    }
+
+    50% {
+        color: rgba(140, 140, 140, 1);
+    }
+
+    100% {
+        color: #ffffff;
+    }
 }
