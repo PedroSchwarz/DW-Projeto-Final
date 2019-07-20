@@ -29,6 +29,7 @@ hr {
     margin: 0.5rem 1rem;
 }
 
+/* HEADER STYLING */
 header {
     display: flex;
     justify-content: space-between;
@@ -96,4 +97,22 @@ i.fab.fa-twitter {
 
 i.fab.fa-twitter:hover {
     color: rgb(33, 116, 111);
+}
+
+/* FOOTER STYLING */
+footer {
+    min-height: 20vh;
+    padding: 1rem 5rem;
+    background-color: rgba(80, 80, 80, 1);
+}
+
+footer ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: #ffffff;
+}
+
+footer ul h2 {
+    font-size: 1.5rem;
 }

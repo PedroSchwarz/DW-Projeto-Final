@@ -126,7 +126,7 @@ input[type=button]:active {
 
 /* GIVING EACH LI A UNIQUE BACKGROUND IMAGE */
 #slideshow li:nth-child(1) {
-    background-image: url(https://images.unsplash.com/photo-1562956839-c12bcb342513?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1534&q=80)
+    background-image: url(https://images.unsplash.com/photo-1562956839-c12bcb342513?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1534&q=80);
 }
 
 #slideshow li:nth-child(2) {
@@ -176,7 +176,7 @@ input[type=button]:active {
     height: 100vh;
     width: 100vw;
     color: #ffffff;
-    background-color: rgba(50, 50, 50, 0.8);
+    background-color: rgba(50, 50, 50, 0.5);
 }
 
 #leading-content h1 {
@@ -184,12 +184,44 @@ input[type=button]:active {
     font-weight: bold;
     text-transform: uppercase;
     margin-bottom: 2rem;
+    animation: slideDownFadeIn 2s linear 1 forwards;
 }
 
 #leading-content p {
     width: 40vw;
     text-align: center;
     font-size: 1.5rem;
+    animation: slideDownFadeIn 2s linear 1 forwards;
+}
+
+#leading-content button {
+    text-align: center;
+    font-size: 1.5rem;
+    animation: slideUpFadeIn 2s linear 1 forwards;
+}
+
+@keyframes slideDownFadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(-150px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes slideUpFadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(100px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
 
 #leading-content button {
