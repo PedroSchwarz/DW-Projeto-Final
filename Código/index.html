@@ -7,6 +7,8 @@
     <title>Início</title>
     <link rel="stylesheet" href="./assets/css/general.css">
     <link rel="stylesheet" href="./assets/css/index.css">
+    <!-- IMAGE SLIDER PLUGIN FLICKITY CSS CDN -->
+    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.min.css">
 </head>
 
@@ -25,10 +27,58 @@
     <main>
         <section id="week-top-posts">
             <h2>PUBLICAÇÕES POPULARES <span class="secondary-color">DA SEMANA</span></h2>
-            <figure>
-                <img src="https://images.unsplash.com/photo-1562956839-c12bcb342513?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1534&q=80"
-                    alt="Generic Image">
-            </figure>
+            <!-- IMAGE SLIDER PLUGIN - FLICKITY - https://flickity.metafizzy.co/ -->
+            <div class="main-carousel" data-flickity='{ "wrapAround": true }'>
+                <div class="carousel-cell">
+                    <!-- CONTEÚDO ADICIONAL COLOCADO POR CIMA DO PLUGIN -->
+                    <section>
+                        <a href="./author-detail.html">
+                            <h3>NOME DO <span class="secondary-color">POST</span> POR NOME DO <span
+                                    class="secondary-color">AUTOR</span></h3>
+                        </a>
+                        <div class="post-score">
+                            <i class="fas fa-star secondary-color"></i>
+                            <i class="fas fa-star secondary-color"></i>
+                            <i class="fas fa-star secondary-color"></i>
+                            <i class="fas fa-star secondary-color"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </section>
+                </div>
+                <div class="carousel-cell">
+                    <!-- CONTEÚDO ADICIONAL COLOCADO POR CIMA DO PLUGIN -->
+                    <section>
+                        <a href="./author-detail.html">
+                            <h3>NOME DO <span class="secondary-color">POST</span> POR NOME DO <span
+                                    class="secondary-color">AUTOR</span></h3>
+                        </a>
+                        <div class="post-score">
+                            <i class="fas fa-star secondary-color"></i>
+                            <i class="fas fa-star secondary-color"></i>
+                            <i class="fas fa-star secondary-color"></i>
+                            <i class="fas fa-star secondary-color"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </section>
+                </div>
+                <div class="carousel-cell">
+                    <!-- CONTEÚDO ADICIONAL COLOCADO POR CIMA DO PLUGIN -->
+                    <section>
+                        <a href="./author-detail.html">
+                            <h3>NOME DO <span class="secondary-color">POST</span> POR NOME DO <span
+                                    class="secondary-color">AUTOR</span></h3>
+                        </a>
+                        <div class="post-score">
+                            <i class="fas fa-star secondary-color"></i>
+                            <i class="fas fa-star secondary-color"></i>
+                            <i class="fas fa-star secondary-color"></i>
+                            <i class="fas fa-star secondary-color"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </section>
+                </div>
+            </div>
+            <!-- PLUGIN'S END -->
         </section>
         <section id="week-top-authors">
             <h2>PROFISSIONAIS POPULARES <span class="secondary-color">DA SEMANA</span></h2>
@@ -38,7 +88,9 @@
                         <img src="https://images.unsplash.com/photo-1534864652366-f46034a7f6cf?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&w=1000&q=80"
                             alt="Generic Profile">
                     </figure>
-                    <a href="./author-detail.html"><h3>NOME DO <span class="secondary-color">AUTOR</span></h3></a>
+                    <a href="./author-detail.html">
+                        <h3>NOME DO <span class="secondary-color">AUTOR</span></h3>
+                    </a>
                     <div class="author-score">
                         <i class="fas fa-star secondary-color"></i>
                         <i class="fas fa-star secondary-color"></i>
@@ -56,7 +108,9 @@
                     <figure>
                         <img src="https://cdn.mos.cms.futurecdn.net/gvQ9NhQP8wbbM32jXy4V3j.jpg" alt="Generic Profile 2">
                     </figure>
-                    <a href="./author-detail.html"><h3>NOME DO <span class="secondary-color">AUTOR</span></h3></a>
+                    <a href="./author-detail.html">
+                        <h3>NOME DO <span class="secondary-color">AUTOR</span></h3>
+                    </a>
                     <div class="author-score">
                         <i class="fas fa-star secondary-color"></i>
                         <i class="fas fa-star secondary-color"></i>
@@ -75,7 +129,9 @@
                         <img src="https://business-insurance.aon.com.au/AON_Affinity/media/Media/Page%20banners/Mobile/photographers-mobile.jpg?width=640&height=454&ext=.jpg"
                             alt="Generic Profile 3">
                     </figure>
-                    <a href="./author-detail.html"><h3>NOME DO <span class="secondary-color">AUTOR</span></h3></a>
+                    <a href="./author-detail.html">
+                        <h3>NOME DO <span class="secondary-color">AUTOR</span></h3>
+                    </a>
                     <div class="author-score">
                         <i class="fas fa-star secondary-color"></i>
                         <i class="fas fa-star secondary-color"></i>
@@ -108,6 +164,8 @@
             </li>
         </ul>
     </footer>
+    <!-- IMAGE SLIDER PLUGIN FLICKITY JS CDN -->
+    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
 </body>
 
 </html>

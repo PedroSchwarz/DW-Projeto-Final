@@ -1,3 +1,55 @@
+/* IMAGE SLIDER PLUGIN FLICKITY */
+.carousel-cell {
+    width: 100%;
+    height: 100vh;
+    margin-right: 10px;
+    background: #8C8;
+    border-radius: 5px;
+    counter-increment: carousel-cell;
+    background-size: cover;
+    margin-top: 4rem;
+}
+
+.carousel-cell section {
+    background-color: rgba(10, 10, 10, 0.7);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 15vh;
+}
+
+.carousel-cell section a {
+    text-decoration: none;
+}
+
+.carousel-cell section a h3 {
+    margin: 1rem;
+    color: #ffffff;
+    transition: all 0.5 linear;
+}
+
+.carousel-cell section a h3:hover {
+    opacity: 0.6;
+}
+
+.carousel-cell section .post-score {
+    margin: 1rem;
+    font-size: 1.4rem;
+}
+
+.carousel-cell:nth-child(1) {
+    background-image: url(https://images.unsplash.com/photo-1562956839-c12bcb342513?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1534&q=80);
+}
+
+.carousel-cell:nth-child(2) {
+    background-image: url(https://images.unsplash.com/photo-1519681393784-d120267933ba?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1000&q=80);
+}
+
+.carousel-cell:nth-child(3) {
+    background-image: url(https://images.unsplash.com/photo-1562932292-21cc36f7254a?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1500&q=80);
+}
+
 #week-top-posts {
     min-height: 100vh;
     background-color: rgba(50, 50, 50, 1);
@@ -8,7 +60,7 @@
 #week-top-posts h2 {
     background-color: rgba(60, 60, 60, 1);
     border-radius: 5px;
-    padding: 0.5rem 1rem;
+    padding: 1rem 1rem;
     margin-top: 1rem;
 }
 
@@ -30,14 +82,14 @@
 #week-top-authors h2 {
     background-color: rgba(50, 50, 50, 1);
     border-radius: 5px;
-    padding: 0.5rem 1rem;
+    padding: 1rem 1rem;
     margin: 1rem 0 2rem 0;
 }
 
 #week-top-authors #authors-list {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: space-between;
 }
 
 #week-top-authors #authors-list article {
@@ -91,11 +143,11 @@
     position: fixed;
     width: 65px;
     height: 65px;
-    bottom: 10%;
+    bottom: 5%;
     right: 5%;
     background-color: rgba(80, 80, 80, 1);
     padding: 1.1rem;
-    box-shadow: 2px 0 40px 2px #000000;
+    box-shadow: 2px 2px 30px #000000;
     border-radius: 50%;
     font-size: 1.6rem;
     transition: all 0.5s linear;

@@ -122,6 +122,7 @@ button:active {
     padding: 4rem 0;
     display: flex;
     justify-content: start;
+    flex-wrap: wrap;
 }
 
 #posts #top-posts article {
@@ -152,6 +153,7 @@ button:active {
 #author-connections #professionals {
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
     padding: 4rem 0;
 }
 
