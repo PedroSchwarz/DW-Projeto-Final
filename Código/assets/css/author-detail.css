@@ -63,7 +63,7 @@ button:active {
 }
 
 #about h2 {
-    font-size: 6rem;
+    font-size: 4rem;
 }
 
 #about p {
@@ -239,7 +239,7 @@ button:active {
     margin-left: 1rem;
 }
 
-#social-medias>i {
+#social-medias a i {
     font-size: 2rem;
     margin-left: 1rem;
 }

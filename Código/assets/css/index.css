@@ -1,5 +1,5 @@
 #week-top-posts {
-    max-height: 100vh;
+    min-height: 100vh;
     background-color: rgba(50, 50, 50, 1);
     color: #ffffff;
     padding: 2rem 4rem 4rem 4rem;
@@ -21,7 +21,7 @@
 }
 
 #week-top-authors {
-    max-height: 100vh;
+    min-height: 100vh;
     background-color: rgba(60, 60, 60, 1);
     color: #ffffff;
     padding: 2rem 4rem 4rem 4rem;
@@ -31,5 +31,80 @@
     background-color: rgba(50, 50, 50, 1);
     border-radius: 5px;
     padding: 0.5rem 1rem;
+    margin: 1rem 0 2rem 0;
+}
+
+#week-top-authors #authors-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+#week-top-authors #authors-list article {
+    flex-basis: 25%;
+    text-align: center;
+    border-radius: 8px;
+    padding-top: 1rem;
+    margin: 2rem .5rem 2rem .5rem;
+}
+
+#week-top-authors #authors-list article figure img {
+    height: 250px;
+    width: 250px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 2px solid orange;
+}
+
+#week-top-authors #authors-list article a {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+#week-top-authors #authors-list article a h3 {
     margin-top: 1rem;
+    transition: all 0.5s linear;
+}
+
+#week-top-authors #authors-list article a:hover h3 {
+    opacity: 0.5;
+}
+
+#week-top-authors #authors-list article div.author-score {
+    font-size: 1.4rem;
+    margin: 1rem 1rem 0 1rem;
+}
+
+#week-top-authors #authors-list article .author-social-medias {
+    padding: 1rem;
+    margin-top: 1rem;
+    background-color: rgba(30, 30, 30, 1);
+}
+
+#week-top-authors #authors-list article .author-social-medias i {
+    font-size: 2rem;
+    margin: 0 1rem 0 1rem;
+}
+
+#new-post-btn {
+    text-align: center;
+    position: fixed;
+    width: 65px;
+    height: 65px;
+    bottom: 10%;
+    right: 5%;
+    background-color: rgba(80, 80, 80, 1);
+    padding: 1.1rem;
+    box-shadow: 2px 0 40px 2px #000000;
+    border-radius: 50%;
+    font-size: 1.6rem;
+    transition: all 0.5s linear;
+}
+
+#new-post-btn:hover {
+    background-color: rgba(90, 90, 90, 1);
+}
+
+#new-post-btn:active {
+    background-color: rgba(100, 100, 100, 1);
 }
