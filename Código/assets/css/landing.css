@@ -200,6 +200,7 @@ input[type=button]:active {
     animation: slideUpFadeIn 2s linear 1 forwards;
 }
 
+/* SLIDE DOWN AND FADE IN ANIMATION */
 @keyframes slideDownFadeIn {
     0% {
         opacity: 0;
@@ -212,6 +213,7 @@ input[type=button]:active {
     }
 }
 
+/* SLIDE UP AND FADE IN ANIMATION */
 @keyframes slideUpFadeIn {
     0% {
         opacity: 0;

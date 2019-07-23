@@ -166,6 +166,7 @@
     animation-delay: 2s;
 }
 
+/* FAKE LOADING CONTENT ANIMATION */
 @keyframes loading {
     0% {
         color: #ffffff;

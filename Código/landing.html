@@ -7,11 +7,13 @@
     <title>Boas-Vindas</title>
     <link rel="stylesheet" href="./assets/css/general.css">
     <link rel="stylesheet" href="./assets/css/landing.css">
+    <!-- FONT AWESOME CDN -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.min.css">
 </head>
 
 <body>
     <main>
+        <!-- SLIDESHOW -->
         <section id="slideshow-section">
             <ul id="slideshow">
                 <li></li>
@@ -20,6 +22,7 @@
                 <li></li>
                 <li></li>
             </ul>
+            <!-- CONTENT ON TOP OF THE SLIDESHOW -->
             <section id="leading-content">
                 <h1>NOME DO <span class="secondary-color">SITE</span></h1>
                 <p>Descrição do site Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consectetur, molestiae.
@@ -28,7 +31,9 @@
                 <button id="slide-btn" type="button"><i class="fas fa-chevron-down secondary-color"></i></button>
             </section>
         </section>
+        <!-- AUTH FORMS -->
         <section id="auth-section">
+            <!-- SIGN IN FORM -->
             <section id="signin">
                 <form action="/auth/signin" method="POST" class="card-effect">
                     <h2>Bem-Vindo <span class="secondary-color">De Volta</span></h2>
@@ -36,6 +41,7 @@
                         <input type="email" placeholder="E-mail">
                         <input type="password" placeholder="Senha">
                     </div>
+                    <!-- OTHER MEDIAS SING IN -->
                     <aside class="other-medias">
                         <h3>Acesse com <span class="secondary-color">outras mídias</span></h3>
                         <a href="./index.html"><i class="fab fa-google"></i></a>
@@ -45,6 +51,7 @@
                     <input type="button" value="Entrar">
                 </form>
             </section>
+            <!-- SIGN UP FORM -->
             <section id="signup">
                 <form action="/auth/signup" method="POST" class="card-effect">
                     <h2>Primeira <span class="secondary-color">Vez?</span></h2>
