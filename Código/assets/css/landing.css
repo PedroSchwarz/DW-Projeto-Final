@@ -183,7 +183,13 @@ input[type=button]:active {
     font-size: 4rem;
     font-weight: bold;
     text-transform: uppercase;
-    margin-bottom: 2rem;
+    animation: slideDownFadeIn 2s linear 1 forwards;
+}
+
+#leading-content h2 {
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 1rem;
     animation: slideDownFadeIn 2s linear 1 forwards;
 }
 
